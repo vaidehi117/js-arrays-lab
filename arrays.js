@@ -15,7 +15,8 @@ Exercise 2:
 */
 
 // Complete Exercise 2 below...
-
+foods.push('pizza');
+foods.push('cheeseburger');
 
 
 console.log('Exercise 2 Result:\n',  foods);
@@ -26,7 +27,7 @@ Exercise 3:
 */
 
 // Complete Exercise 3 below...
-
+foods.unshift('taco');
 
 
 console.log('Exercise 3 Result:\n', foods);
@@ -37,7 +38,7 @@ Exercise 4:
 */
 
 // Complete Exercise 4 below...
-
+var favFood = foods.indexOf('pizza');
 
 
 console.log('Exercise 4 Result:\n', favFood);
@@ -48,9 +49,7 @@ Exercise 5:
 */
 
 // Complete Exercise 5 below...
-
-
-
+foods.splice(2,0,'tofu');
 console.log('Exercise 5 Result:\n', foods);
 
 /*
@@ -59,7 +58,7 @@ Exercise 6:
 */
 
 // Complete Exercise 6 below...
-
+foods.splice(1,1,'sushi','cupcake');
 
 
 console.log('Exercise 6 Result:\n', foods);
