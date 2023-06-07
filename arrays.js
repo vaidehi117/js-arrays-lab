@@ -70,6 +70,7 @@ Exercise 7:
 */
 
 // Complete Exercise 7 below...
+const yummy = foods.slice(1,3);
 
 
 
@@ -81,7 +82,7 @@ Exercise 8:
 */
 
 // Complete Exercise 8 below...
-
+const soyIdx = foods.indexOf('tofu');
 
 
 console.log('Exercise 8 Result:\n', soyIdx);
@@ -93,7 +94,7 @@ Exercise 9:
 */
 
 // Complete Exercise 9 below...
-
+const allFoods = 'taco -> sushi -> cupcake -> tofu -> cheeseburger'
 
 
 console.log('Exercise 9 Result:\n', allFoods);
@@ -104,7 +105,7 @@ Exercise 10:
 */
 
 // Complete Exercise 10 below...
-
+const hasSoup = foods.includes('soup');
 
 
 console.log('Exercise 10 Result:\n', hasSoup);
@@ -118,7 +119,12 @@ Exercise 11:
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
 // Complete Exercise 11 below...
-
+let odds = [];
+nums.forEach(function(num) {
+    if (num % 2) {
+        odds.push(num);
+    }
+});
 
 
 console.log('Exercise 11 Result:\n', odds);
@@ -132,7 +138,21 @@ Exercise 12:
 */
 
 // Complete Exercise 12 below...
+let fizzbuzz = [];
+let fizz = [];
+let buzz = [];
 
+for (numbers = 1; numbers <= 100; numbers++){
+    if (numbers% 15 === 0) {
+        console.log("FizzBuzz");
+    } else if (numbers % 3 === 0) {
+        console.log("Fizz");
+    } else if (numbers % 5 === 0){
+        console.log("Buzz");
+    } else {
+        console.log(numbers);
+    }
+}
 
 
 console.log('Exercise 12 Results:');
@@ -154,6 +174,8 @@ const numArrays = [
 ];
 
 // Complete Exercise 13 below...
+let numList = [];
+numList = numArrays[numArrays.length - 1];
 
 
 
@@ -165,7 +187,7 @@ Exercise 14:
 */
 
 // Complete Exercise 14 below...
-
+let num = numArrays[2][1];
 
 
 console.log('Exercise 14 Result:\n', num);
@@ -177,6 +199,12 @@ Exercise 15:
 */
 
 // Complete Exercise 15 below...
+total = 0;
+numArrays.forEach(function(n){
+    n.forEach(function(value) {
+         total += value;
+    })
+});
 
 
 
